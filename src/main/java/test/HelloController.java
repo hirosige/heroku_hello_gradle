@@ -15,7 +15,7 @@ public class HelloController
     @RequestMapping("/")
     @ResponseBody
     public String home() {
-        TimeZone tz = TimeZone.getTimeZone("Asia/Tokyo");
+        TimeZone tz = TimeZone.getTimeZone("Asia/Bangkok");
         SimpleDateFormat sdf = new SimpleDateFormat("MMMMM dd, yyyy HH:mm");
         sdf.setTimeZone(tz);
         return "[" + sdf.format(new Date()) +  "] Hello, Spring Boot Sample Application!! Deployed!!";

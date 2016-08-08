@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import java.util.Date;
+import java.util.TimeZone;
 
 @Controller
 @EnableAutoConfiguration
@@ -13,7 +13,9 @@ public class HelloController
     @RequestMapping("/")
     @ResponseBody
     public String home() {
-        Date date = new Date();
-        return "[" + date.toString() +  "] Hello, Spring Boot Sample Application!! Deployed!!";
+        TimeZone tz = TimeZone.getTimeZone("Asia/Tokyo");
+        SimpleDateFormat sdf = new SimpleDateFormat("MMMMM dd, yyyy HH:mm");
+        sdf.setTimeZone(tz);
+        return "[" + sdf.format(new Date()) +  "] Hello, Spring Boot Sample Application!! Deployed!!";
     }
 }

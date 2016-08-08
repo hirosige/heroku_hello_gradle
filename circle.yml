@@ -7,3 +7,9 @@ machine:
 dependencies:
   pre:
     - chmod +x ./gradlew
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: immense-meadow-12809

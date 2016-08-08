@@ -12,6 +12,6 @@ public class HelloController
     @RequestMapping("/")
     @ResponseBody
     public String home() {
-        return "Hello, Spring Boot Sample Application!!デプロイドおおお";
+        return "Hello, Spring Boot Sample Application!! Deployed!!";
     }
 }

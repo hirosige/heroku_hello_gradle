@@ -1,6 +1,6 @@
 package test;
 
-import com.arms.app.project.Sample;
+import test.Sample;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

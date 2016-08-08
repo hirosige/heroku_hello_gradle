@@ -16,6 +16,9 @@ apply plugin: "eclipse"
 
 eclipse {
 	classpath {
+		compile('org.springframework.boot:spring-boot-starter-data-jpa')
+		compile('org.projectlombok:lombok:1.16.6')
+		compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 		containers "org.springsource.ide.eclipse.gradle.classpathcontainer"
 	}
 }

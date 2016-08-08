@@ -31,6 +31,8 @@ repositories {
 
 dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
+	runtime('mysql:mysql-connector-java')
+	compile('net.sourceforge.nekohtml:nekohtml')
 	testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 

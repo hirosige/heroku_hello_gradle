@@ -7,7 +7,3 @@ machine:
 dependencies:
   pre:
     - chmod +x ./gradlew
-
-test:
-  post:
-    - cp -r build/reports/* $CIRCLE_TEST_REPORTS/
